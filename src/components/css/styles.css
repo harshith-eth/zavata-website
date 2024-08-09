@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for Infinite Scrolling Logos */
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-slide-left-infinite {
+  animation: slide-left 30s linear infinite;
+}
+
+.group-hover\:animation-pause:hover .animate-slide-left-infinite {
+  animation-play-state: paused;
+}
