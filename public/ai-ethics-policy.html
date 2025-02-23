@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Policy - Human01D</title>
+    <link href="/build/styles.css" rel="stylesheet">
+    <link rel="icon" href="/human01d-favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0" defer></script>
+    <script type="module" src="/tracking.js" defer></script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_xgLver4nrEIBFBqFDxGkKX8fTJExgEJOV8oMUMg1WwU',{api_host:'https://us.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
+            })
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "n5ndki377r");
+    </script>
+
+</head>
+
+<body class="overflow-x-hidden bg-gray-50">
+    <div class="overflow-x-hidden bg-gray-50">
+        <header class="py-4 md:py-6" x-data="{expanded: false}">
+            <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex-shrink-0">
+                        <a href="/" title="" class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+                            <img class="w-auto h-4" src="/Human01D-logo.png" alt="Human01D Logo" />
+                        </a>
+                    </div>
+
+                    <div class="flex lg:hidden">
+                        <button type="button" class="text-gray-900" @click="expanded = !expanded" :aria-expanded="expanded">
+                            <span x-show="!expanded" aria-hidden="true">
+                                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </span>
+
+                            <span x-show="expanded" aria-hidden="true">
+                                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
+                        <a href="/#features" title="" class="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
+
+                        <a href="/blogs" title="" class="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Blogs </a>
+
+                        <a href="https://join.slack.com/t/human01d-ai/shared_invite/zt-2ml9mopar-pOKUVC54OxdPYu59U_LetQ" title="" class="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2" target="_blank"> Join Community </a>
+
+                    </div>
+
+                    <div class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-10">
+                        <a href="#" title="" class="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Customer Login </a>
+                    
+                        <a href="https://app.human01d.ai/login"
+                            title="Get Started"
+                            class="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                            role="button">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <nav x-show="expanded" x-collapse>
+                    <div class="px-1 py-8">
+                        <div class="grid gap-y-7">
+                            <a href="#" title="" class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
+
+                            <a href="#" title="" class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
+
+                            <a href="#" title="" class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Automation </a>
+
+                            <a href="#" title="" class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Customer Login </a>
+
+                            <a href="#"
+                                title=""
+                                class="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                                role="button">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="pt-12 bg-gray-50 sm:pt-16">
+            <style>
+                .move-down {
+                  margin-top: 100px; /* Adjust this value to move the section down */
+                }
+              </style>
+            
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h1 class="px-6 text-lg text-gray-600 font-inter">AI Ethics Policy</h1>
+                    <p class="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
+                        <p class="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
+                            Human01D AI Ethics Policy
+                        </p>
+                        
+                    <div class="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
+                        <p class="mt-8 text-base text-gray-500 font-inter">Last Updated: 01-01-2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .custom-margin {
+                    margin-top: 4rem; /* Adjust as needed */
+                }
+                .custom-rounded {
+                    border-radius: 26px; /* Adjust as needed */
+                }
+            </style>
+            
+            <div class="pb-12 bg-white">
+                <div class="relative">
+                    <div class="absolute inset-0 h-2/3 bg-gray-50"></div>
+                    <div class="relative mx-auto">
+                        <div class="lg:max-w-6xl lg:mx-auto custom-margin">
+                            <div class="max-w-4xl mx-auto text-left">
+                                <p class="text-lg text-gray-700 font-inter">Human01D is dedicated to upholding ethical and lawful technology standards while using Artificial Intelligence (AI) and ensuring that our practices are in compliance with the rules and regulations set forth by the laws in Delaware. This document outlines our AI ethics policies which shows our commitment towards ensuring fairness, inclusivity, transparency, accountability, and non-discrimination throughout our operations and decision-making process.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">1. Fairness, Non-Discrimination & Inclusivity Adherence:</h2>
+                                <h3 class="mt-4 text-xl font-bold text-gray-900 font-pj">1.1 Discrimination Avoidance:</h3>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">We commit to using AI algorithms and data-driven processes that are designed to avoid discrimination based on race, gender, religion, caste, nationality, political inclination, or any other protected category under US law</p>
+                                <h3 class="mt-4 text-xl font-bold text-gray-900 font-pj">1.2 Regular Audits:</h3>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Regular audits of our AI systems will be conducted through statistical analysis, algorithmic auditing, user surveys, or other relevant methods.These audits aim to identify and rectify any biases or unfair practices that may emerge during the development or deployment phases.</p>
+
+                                <h3 class="mt-4 text-xl font-bold text-gray-900 font-pj">1.3 Equal Opportunities:</h3>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Our AI algorithms are purposefully designed to provide equal opportunities to all candidates, irrespective of their background. Efforts will be made to ensure that AI systems are accessible to individuals with disabilities as well. We actively champion diversity and inclusion in both our workforce and candidate pool. We foster an environment where meritocracy prevails, and individuals are evaluated based on their skills, qualifications, and experiences.</p>
+
+                                <h3 class="mt-4 text-xl font-bold text-gray-900 font-pj">1.4 Continuous Improvement:</h3>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">We improve our AI systems, policies, and practices on a continuous basis which may include staying abreast of advancements in fairness technologies, engaging in industry collaboration, and adapting our approach to align with evolving ethical standards.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">2. Transparency Pledge:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Transparency is a cornerstone of our AI-driven recruitment processes. We will ensure that candidates and clients are provided with clear information on AI use including data sources and algorithms, which will be accessible upon request. Clear and understandable explanations will be provided in case an AI system is used to make a decision that impacts an individual.</p>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">We further promise to keep stakeholders informed about significant changes in our AI processes, ensuring transparency is maintained over time.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">3. Accountability Pledge:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">The Human01D will designate a team of responsible personnel including an AI Ethics Officer who will oversee AI-related activities and ensure compliance with ethical standards and compliance with relevant applicable laws. Regular training and awareness programs on AI ethics and safety will be conducted for all employees engaged in AI systems. Comprehensive logs of AI-based decisions are maintained to ensure traceability and accountability. Regular checks and assessments will be conducted to verify compliance with ethical standards and legal requirements, aligning our AI practices with evolving regulations.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">4. Privacy and Data Protection:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Human01D will adhere to all the data protection and privacy laws prevalent in Delaware State in the Unites States, including the Digital Personal Data Protection Act, 2023 (DPDP Act) and the Information Technology Act, 2000. We will obtain explicit consent from individuals before collecting, storing, or using their personal data. This ensures that users have control over how their information is utilized.</p>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">To safeguard the collected data,robust security measures like encryption, access controls, network security etc. are in place.These measures are designed to protect against unauthorized access and ensure the integrity and confidentiality of the data.</p>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Individuals have the right to request access to their personal data held by Human01D. Processes are in place to facilitate such requests in accordance with applicable data protection laws.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">5. Data Accuracy and Quality:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">We have made every effort to maintain the accuracy and quality of data used by our AI systems. Data cleaning and validation processes are also implemented to reduce errors and inaccuracies.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">6. Mitigation of Bias Commitment:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter"> Human01D also acknowledges the potential of bias in AI recruitment systems and is committed to mitigating it. Our AI systems utilize diverse and representative training data to avoid perpetuating existing biases.This ensures that our algorithms are trained on a broad spectrum of information. Regular audits and assessments will be conducted from time to time to identify and rectify any biases in our algorithms. Mitigation strategies are implemented to address identified biases promptly. This includes refining algorithms, updating training datasets, and incorporating ethical considerations into the development process.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">7. Continuous Improvement:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter"> Human01D will regularly monitor the fairness and performance of our AI systems through audits. Human01D is committed to ongoing monitoring, evaluation, and improvement of our AI ethics policies and practices. We will stay updated on evolving best practices, research, and technologies related to ethical AI and continuously work to improve our policies, processes, and algorithms. We will not only stay updated with evolving Delaware laws and regulations related to AI and adapt our policies accordingly but will also keep our employees abreast with them all by implementing training and development programs.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">8. Compliance Initiatives:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Human01D will retain legal consultants and advisors to ensure we comply with all applicable laws and regulations governing AI, data protection, and non-discrimination in Delaware. We will conduct regular audits of our AI systems and data practices to ensure ongoing compliance. Any non-compliance will be addressed promptly by designated personnel. We will cooperate fully with regulatory authorities in any investigations or audits of our AI practices. Beyond reactive measures, we adopt a proactive approach to legal compliance. This includes anticipating changes in laws and regulations to adapt our policies and practices preemptively.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">9. Ethical Use of AI in Recruiting:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">We will use AI to enhance our recruiting processes, which will include but is not limited to candidate sourcing, screening, and matching while ensuring it does not replace the critical role of human judgment and ethics while conducting the hiring process. AI will not be used as the sole basis for any hiring decision. It serves as a supplementary tool to empower recruiters, ensuring that human insights and ethical considerations remain at the forefront of the decision-making process. Our recruiters will be continuously trained on mindfully leveraging AI-based tools to minimize bias.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold text-gray-900 font-pj">10. Reporting and Whistle-blowing:</h2>
+                                <p class="mt-2 text-lg text-gray-700 font-inter">Dedicated reporting channels like ethics hotline, web forms, and dedicated email IDs will be provided for all stakeholders to securely and confidentially report any unethical, biased, or unlawful AI-related practices. The Human01D has a strict non-retaliation policy for all good-faith reporting.</p>
+
+                                <p class="mt-8 text-lg text-gray-700 font-inter">By adhering to these AI ethics policies, the sole aim of the Human01D is to foster trust, protect individual rights, and contribute to mindful, responsible, and ethical AI adoption in the industry in the Unites States. These policies will be reviewed periodically and updated as necessary in order to reflect the changing regulations and best practices under the jurisdiction of Delaware.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+                    <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+                        <img class="w-26 h-4" src="/Human01D-logo.png" alt="" />
+        
+                        <p class="text-base leading-relaxed text-gray-600 mt-7">Automate Hiring with
+                            AI Interviewer.</p>
+        
+                        <ul class="flex items-center space-x-3 mt-9">
+                            <li>
+                                <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                                        <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                        <path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M25 7C34.941 7 43 15.059 43 25C43 34.941 34.941 43 25 43C15.059 43 7 34.941 7 25" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div>
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Human01D</p>
+        
+                        <ul class="mt-6 space-y-4">
+                            <li>
+                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Features </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Works </a>
+                            </li>
+        
+                            <li>
+                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Career </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div>
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Help</p>
+        
+                        <ul class="mt-6 space-y-4">
+                            <li>
+                                <a href="/ai-ethics-policy" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> AI Ethics Policy </a>
+                            </li>
+        
+                            <li>
+                                <a href="/cookie-policy" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Cookie Policy </a>
+                            </li>
+        
+                            <li>
+                                <a href="/terms-of-service" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Terms of Service </a>
+                            </li>
+        
+                            <li>
+                                <a href="/privacy-policy" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
+        
+                        <form action="#" method="POST" class="mt-6">
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                            </div>
+        
+                            <button type="submit" class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <hr class="mt-16 mb-10 border-gray-200" />
+        
+                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Human01D, a product of Exitliquidity Inc.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript to handle smooth scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Scroll to the section if there's a hash in the URL
+          if (window.location.hash) {
+            const hash = window.location.hash;
+            const element = document.querySelector(hash);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+  
+          // Add click event listener to the features link
+          const featuresLink = document.querySelectorAll('a[href="/#features"]');
+          featuresLink.forEach(link => {
+            link.addEventListener('click', function (event) {
+              event.preventDefault();
+              window.location.href = '/#features';
+            });
+          });
+        });
+      </script>
+
+
+
+
+
+
+</body>
+
+</html>

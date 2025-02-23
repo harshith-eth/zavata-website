@@ -1,0 +1,37 @@
+{
+    "rewrites": [
+      {
+        "source": "/blogs",
+        "destination": "/blogs/blogs.html"
+      },
+      {
+        "source": "/human01d-launch",
+        "destination": "/blogs/blog1/launch.html"
+      },
+      {
+        "source": "/blogs/msft4startups",
+        "destination": "/blogs/blog2/msft.html"
+      },
+      {
+        "source": "/ai-ethics-policy",
+        "destination": "/ai-ethics-policy.html"
+      },
+      {
+        "source": "/cookie-policy",
+        "destination": "/cookie-policy.html"
+      },
+      {
+        "source": "/terms-of-service",
+        "destination": "/terms-of-service.html"
+      },
+      {
+        "source": "/privacy-policy",
+        "destination": "/privacy-policy.html"
+      },
+      {
+        "source": "/blogs/human01d-launch",
+        "destination": "/blogs/blog1/launch.html"
+      }
+    ]
+  }
+  
